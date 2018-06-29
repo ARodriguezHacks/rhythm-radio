@@ -15,7 +15,7 @@ class Album extends Component {
       currentSong: album.songs[0],
       currentTime: 0,
       duration: album.songs[0].duration,
-      currentVolume: 0,
+      currentVolume: 0.3,
       isPlaying: false,
       currentlyHovered: false
     };
@@ -97,7 +97,11 @@ class Album extends Component {
     const totalSec = Math.ceil(sec);
     const min = Math.floor(totalSec / 60);
     const secRemainder = (totalSec % 60);
-    let convertedTime = min + ':' + secRemainder;
+    let convertedTime = min + ':';
+    if (secRemainder < 10) {
+      convertedTime += '0';
+    }
+    convertedTime += secRemainder;
     return convertedTime;
   }
 
