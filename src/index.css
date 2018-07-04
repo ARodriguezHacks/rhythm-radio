@@ -1,5 +1,178 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  color: white;
+  font-family: 'Rambla', sans-serif;
+  background-image: url('/assets/images/blurred_backgrounds/audience-dancing.jpeg');
+}
+
+/* -------- LANDING PAGE -------- */
+
+.hero-title {
+  font-size: 35px;
+}
+
+.selling-points {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.point {
+  width: 50%;
+}
+
+#float-left-top {
+  float: left;
+  margin-left: 20px;
+}
+
+#float-left-bottom {
+  clear: both;
+  margin-left: 20px;
+}
+
+#float-right {
+  float: right;
+}
+
+.ion-headphone {
+  font-size: 50px;
+}
+
+.ion-radio-waves {
+  font-size: 60px;
+}
+
+.ion-iphone {
+  font-size: 70px;
+}
+
+/* -------- LIBRARY PAGE -------- */
+
+.library {
+  width: 100%;
+}
+
+.float-album-left {
+  float: left;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.float-album-right {
+  float: left;
+  margin-top: 20px;
+}
+
+.image-resize {
+  box-shadow: 10px 10px 10px black;
+  width: 60%;
+}
+
+.album-title, .album-artist, .album-songs {
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  margin-left: 118px;
+}
+
+.album-title {
+  font-size: 30px;
+}
+
+.album-artist, .album-songs {
+  font-size: 18px;
+}
+
+/* -------- ALBUM PAGE -------- */
+
+.album {
+  width: 100%;
+  margin-top: 50px;
+}
+
+#album-info {
+  width: 30%;
+  float: left;
+  margin-left: 130px;
+}
+
+#song-list {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#music-info {
+  float: left;
+  width: 50%;
+}
+
+#album-cover-art {
+  box-shadow: 10px 10px 10px black;
+  width: 50%;
+}
+
+.album-details {
+  text-align: left;
+  margin-left: 118px;
+}
+
+#album-title {
+  font-size: 30px;
+}
+
+.artist {
+  font-size: 18px;
+}
+
+.player-bar {
+  width: 100%;
+}
+
+.seek-bar-top {
+  width: 70%;
+}
+
+.seek-bar-bottom {
+  width: 50%;
+}
+
+.song-button {
+  width: 45%;
+  padding: 10px 5px 10px 5px;
+  font-size: 14px;
+}
+
+.song-number {
+  font-weight: bold;
+}
+
+#time-control {
+  margin-top: 10px;
+}
+
+.current-time {
+  font-size: 20px;
+}
+
+.song-title {
+  font-size: 20px;
+}
+
+.song-duration {
+  font-size: 20px;
+}
+
+#previous, #play-pause, #next {
+  width: 40px;
+  padding: 10px 0 10px;
+  margin: 0 5px 0 5px;
+}
+
+.total-time {
+  font-size: 20px;
+}
+
+.ion-volume-low, .ion-volume-high {
+  font-size: 20px;
 }
