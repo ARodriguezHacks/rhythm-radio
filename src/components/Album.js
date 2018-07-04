@@ -122,6 +122,7 @@ class Album extends Component {
             <div id="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
+        <section id="music-info">
         <table id="song-list">
           <colgroup>
             <col id="song-number-column" />
@@ -162,6 +163,7 @@ class Album extends Component {
           formatTime={(e) => this.formatTime(e)}
           handleVolumeChange={(e) => this.handleVolumeChange(e)}
         />
+        </section>
       </section>
     );
   }

@@ -1,5 +1,30 @@
 .App {
   text-align: center;
+  padding-bottom: 30px;
+  margin-bottom: 5px;
+}
+
+nav {
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+  margin: 30px 0px 20px 20px;
+  margin-right: 150px;
+}
+
+.nav-style {
+  text-decoration: none;
+  margin: 20px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav-style:hover {
+  color: blue;
+}
+
+.top-hero-title {
+  font-size: 45px;
 }
 
 .App-logo {
