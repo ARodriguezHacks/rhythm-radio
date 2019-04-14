@@ -12,7 +12,7 @@ class Album extends Component {
 
     this.state = {
       album: album,
-      currentSong: album.songs[0],
+      currentSong: false,
       currentTime: 0,
       duration: album.songs[0].duration,
       currentVolume: 0.3,
