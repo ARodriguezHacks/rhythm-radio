@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import albumData from './../data/albums';
 import PlayerBar from './PlayerBar';
+import { IoIosPlay, IoIosPause } from "react-icons/io"
 
 class Album extends Component {
   constructor(props) {
@@ -137,7 +138,7 @@ class Album extends Component {
               <td className="song-index">
                 <button className="song-button">
                 {(this.state.currentSong.title === song.title) ?
-                  <span className={this.state.isPlaying ? "ion-pause" : "ion-play"}></span> :
+                  <span className={this.state.isPlaying ? (<IoIosPause />) : (<IoIosPlay />) }></span> :
                   (this.state.currentlyHovered === index+1) ?
                   <span className="ion-play"></span> :
                   <span className="song-number">{index+1}</span>
