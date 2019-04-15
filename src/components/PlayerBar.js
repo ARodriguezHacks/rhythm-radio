@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { FaPlay, FaPause, FaForward, FaBackward, FaVolumeDown, FaVolumeUp } from "react-icons/fa";
 
 class PlayerBar extends Component {
   render() {
@@ -6,13 +7,13 @@ class PlayerBar extends Component {
       <section className="player-bar">
         <section id="buttons">
           <button id="previous" onClick={this.props.handlePrevClick}>
-            <span className="ion-skip-backward"></span>
+            <span><FaBackward /></span>
           </button>
           <button id="play-pause" onClick={this.props.handleSongClick}>
-            <span className={this.props.isPlaying ? 'ion-pause' : 'ion-play'}></span>
+            <span>{this.props.isPlaying ? <FaPause /> : <FaPlay />}</span>
           </button>
           <button id="next" onClick={this.props.handleNextClick}>
-            <span className="ion-skip-forward"></span>
+            <span><FaForward /></span>
           </button>
         </section>
         <section id="time-control">
@@ -29,7 +30,7 @@ class PlayerBar extends Component {
           <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
         </section>
         <section id="volume-control">
-          <div className="icon ion-volume-low"></div>
+          <div><FaVolumeDown /></div>
           <input
           type="range"
           className="seek-bar-bottom"
@@ -39,7 +40,8 @@ class PlayerBar extends Component {
           step="0.01"
           onChange={this.props.handleVolumeChange}
          />
-          <div className="icon ion-volume-high"> {this.props.currentVolume}</div>
+          <div><FaVolumeUp /></div>
+           {this.props.currentVolume}
         </section>
       </section>
     );

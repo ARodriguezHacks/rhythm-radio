@@ -35,15 +35,15 @@ body {
   float: right;
 }
 
-.ion-headphone {
+.icon-headphone {
   font-size: 50px;
 }
 
-.ion-radio-waves {
+.icon-radio {
   font-size: 60px;
 }
 
-.ion-iphone {
+.icon-phone {
   font-size: 70px;
 }
 
@@ -138,9 +138,9 @@ body {
 }
 
 .song-button {
-  width: 45%;
-  padding: 10px 5px 10px 5px;
-  font-size: 14px;
+  width: 50px;
+  padding: 10px 0 10px;
+  margin: auto;
 }
 
 .song-number {
