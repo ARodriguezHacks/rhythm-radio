@@ -14,7 +14,7 @@ class App extends Component {
             <Link to='/' className="nav-style">Home</Link>
             <Link to='/library' className="nav-style"> Library</Link>
           </nav>
-          <h1 className="top-hero-title">Bloc Jams</h1>
+          <h1 className="top-hero-title">Rhythm Radio</h1>
         </header>
         <main>
           <Route exact path="/" component={Landing} />
