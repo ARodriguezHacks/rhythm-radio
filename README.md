@@ -57,11 +57,11 @@ class PostsController < ApplicationController
 
 ## Screenshots
 
-![Rhythm Radio Landing Page](assets/images/rhythmradiolanding.png)
+![Rhythm Radio Landing Page](public/assets/images/rhythmradiolanding.png)
 
-![Rhythm Radio Albums Page](assets/images/rhythmradioalbums.png)
+![Rhythm Radio Albums Page](public/assets/images/rhythmradioalbums.png)
 
-![Rhythm Radio 1st Album Page](assets/images/rhythmradioalbum1.png)
+![Rhythm Radio 1st Album Page](public/assets/images/rhythmradioalbum1.png)
 
 ---------------
 
