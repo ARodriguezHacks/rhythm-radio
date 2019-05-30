@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faMobileAlt, faHeadphones, faCompactDisc, faPlay, faPause, faForward, faBackward, faVolumeDown, faVolumeUp } from '@fortawesome/free-solid-svg-icons';
 import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
 
+library.add(faMobileAlt, faHeadphones, faCompactDisc, faPlay, faPause, faForward, faBackward, faVolumeDown, faVolumeUp);
 class App extends Component {
   render() {
     return (

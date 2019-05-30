@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { FaPlay, FaPause, FaForward, FaBackward, FaVolumeDown, FaVolumeUp } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class PlayerBar extends Component {
   render() {
@@ -7,13 +7,13 @@ class PlayerBar extends Component {
       <section className="player-bar">
         <section id="buttons">
           <button id="previous" onClick={this.props.handlePrevClick}>
-            <span><FaBackward /></span>
+            <span><FontAwesomeIcon icon="backward" /></span>
           </button>
           <button id="play-pause" onClick={this.props.handleSongClick}>
-            <span>{this.props.isPlaying ? <FaPause /> : <FaPlay />}</span>
+            <span>{this.props.isPlaying ? <FontAwesomeIcon icon="pause" /> : <FontAwesomeIcon icon="play" />}</span>
           </button>
           <button id="next" onClick={this.props.handleNextClick}>
-            <span><FaForward /></span>
+            <span><FontAwesomeIcon icon="forward" /></span>
           </button>
         </section>
         <section id="time-control">
@@ -30,7 +30,7 @@ class PlayerBar extends Component {
           <div className="total-time">{this.props.formatTime(this.props.duration)}</div>
         </section>
         <section id="volume-control">
-          <div><FaVolumeDown /></div>
+          <div><FontAwesomeIcon icon="volume-down" /></div>
           <input
           type="range"
           className="seek-bar-bottom"
@@ -40,7 +40,7 @@ class PlayerBar extends Component {
           step="0.01"
           onChange={this.props.handleVolumeChange}
          />
-          <div><FaVolumeUp /></div>
+          <div><FontAwesomeIcon icon="volume-up" /></div>
            {this.props.currentVolume}
         </section>
       </section>
