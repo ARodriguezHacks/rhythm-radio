@@ -44,7 +44,7 @@ or
 
 Running `git clone` will create a new directory on your local machine called "Rhythm Radio" unless you specified a different name for the directory. Change directory (`cd`) into your newly cloned directory
 
-`$ cd rhythm-radio` or `$ cd your-preferref-name-for-project`
+`$ cd rhythm-radio` or `$ cd your-preferred-name-for-project`
 
 Next run `npm install` to install the project's dependencies
 
@@ -66,11 +66,12 @@ Make sure you have React installed. The simplest way is through the npm package 
 
 https://www.codecademy.com/articles/react-setup-i
 
-## Tech/Framework used
-• HTML5 <br />
-• CSS3 <br />
-• JavaScript (React.js) <br />
-• Font Awesome Icon Library <br />
+## Tech/Libraries used
+
+• HTML5 
+• CSS3
+• JavaScript (React.js)
+• Font Awesome Icon Library
 
 ## Features
 
