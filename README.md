@@ -68,20 +68,20 @@ https://www.codecademy.com/articles/react-setup-i
 
 ## Tech/Libraries used
 
-• HTML5 
-• CSS3
-• JavaScript (React.js)
-• Font Awesome Icon Library
+* HTML5 
+* CSS3
+* JavaScript (React.js)
+* Font Awesome Icon Library
 
 ## Features
 
-Seemless navigation thanks to React Router <br />
+* Seemless navigation thanks to React Router <br />
 
-User-friendy icons accomplished through the Font Awesome library <br />
+* User-friendy icons accomplished through the Font Awesome library <br />
 
-Set of most essential music player controls (e.g., play, pause, volume) <br />
+* Set of most essential music player controls (e.g., play, pause, volume) <br />
 
-Ability to add album data to the project inside the `albums.js` file located inside the `data` folder:
+* Ability to add album data to the project inside the `albums.js` file located inside the `data` folder:
 ```
 export default [{
   title: 'The Colors',
