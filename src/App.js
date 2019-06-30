@@ -6,6 +6,7 @@ import { faMobileAlt, faHeadphones, faCompactDisc, faPlay, faPause, faForward, f
 import Landing from './components/Landing';
 import Library from './components/Library';
 import Album from './components/Album';
+import Search from './components/Search';
 
 library.add(faMobileAlt, faHeadphones, faCompactDisc, faPlay, faPause, faForward, faBackward, faVolumeDown, faVolumeUp);
 class App extends Component {
@@ -13,7 +14,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <nav>
+          <nav className="nav">
             <Link to='/' className="nav-style">Home</Link>
             <Link to='/library' className="nav-style"> Library</Link>
           </nav>
@@ -24,6 +25,19 @@ class App extends Component {
           <Route path="/library" component={Library} />
           <Route path="/album/:slug" component={Album} />
         </main>
+        <div className="clear-footer footer">
+          <Search />
+          <footer>
+            <h4>Rhythm Radio | Angie Rodriguez</h4>
+            <div>
+              <nav className="mobile-nav">
+                <Link to='/' className="mobile-home-nav">Home</Link>
+                <Link to='/library' className="mobile-lib-nav">Library</Link>
+                <Link to='/library' className="mobile-favs-nav">Favs</Link>
+              </nav>
+            </div>
+          </footer>
+        </div>
       </div>
     );
   }

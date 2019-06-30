@@ -3,21 +3,38 @@ body {
   padding: 0;
   color: white;
   font-family: 'Rambla', sans-serif;
-  background-image: url('/assets/images/blurred_backgrounds/audience-dancing.jpeg');
+  width: 100%;
+  height: 100%;
+  background-image: url('/assets/images/audience-band-concert-1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
+/* ----- SEARCH COMPONENT ------ */
+
+.submit {
+  background-color: rgb(76, 223, 76);
+}
+
+
 /* -------- LANDING PAGE -------- */
+
+.landing {
+  width: 100%;
+  height: 100%;
+}
 
 .hero-title {
   font-size: 35px;
 }
 
-.selling-points {
+.landing-features {
   width: 100%;
   margin: 0 auto;
 }
 
-.point {
+.feature {
   width: 50%;
 }
 
@@ -62,11 +79,6 @@ body {
 .float-album-right {
   float: left;
   margin-top: 20px;
-}
-
-.image-resize {
-  box-shadow: 10px 10px 10px black;
-  width: 60%;
 }
 
 .album-title, .album-artist, .album-songs {
@@ -175,4 +187,94 @@ body {
 
 .ion-volume-low, .ion-volume-high {
   font-size: 20px;
+}
+
+.search-background {
+  background-color: aquamarine;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+/* ------- Screens smaller than 768px width ---------- */
+
+@media (max-width: 767px) {
+
+  .nav {
+    display: none;
+  }
+
+  .hero-title {
+    display: none;
+  }
+
+  .landing {
+    width: 100%;
+    height: 100%;
+  }
+
+  .feature {
+    width: 100%;
+    height: 100%;
+    background-color: darkgoldenrod;
+  }
+
+  #float-left-top {
+    float: none;
+    margin: 0px;
+    border-top: solid black;
+    border-bottom: solid black;
+  }
+
+  #float-right {
+    float: none;
+    margin: 0px;
+    border-bottom: solid black;
+  }
+
+  #float-left-bottom {
+    float: none;
+    margin: 0px;
+    border-bottom: solid black;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+}
+
+/* ------- Screens smaller than 1024px width ---------- */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  .feature {
+    width: 30%;
+    height: 100%;
+  }
+
+  #float-left-top {
+    float: left;
+  }
+
+  #float-right {
+    float: left;
+  }
+
+  #float-left-bottom {
+    clear: none;
+    float: left;
+  }
+
+  .clear-footer {
+    clear: both;
+  }
+
+  .footer {
+    width: 100%;
+  }
 }
