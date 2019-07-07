@@ -15,14 +15,19 @@ class Library extends Component {
       <section className="library">
         {
           this.state.albums.map( (album, index) =>
-            <Link to={`/album/${album.slug}`} key={index}>
-              <div className={(index === 0) ? "float-album-left" : "float-album-right" }>
-              <img src={album.albumCover} className="image-resize" alt={album.title} />
-              <div className="album-title">{album.title}</div>
-              <div className="album-artist">{album.artist}</div>
-              <div className="album-songs">{album.songs.length} songs</div>
+              <div className="album-item" key={index}>
+                <div className="img-left">
+                  <Link to={`/album/${album.slug}`}>
+                    <img src={album.albumCover} alt={album.title} />
+                  </Link>
+                </div>
+                <div className="album-info-float">
+                  <div>{album.title}</div>
+                  <div>{album.artist}</div>
+                  <div>{album.songs.length} songs</div>
+                </div>
+                <div className="album-clear"></div>
               </div>
-            </Link>
           )
         }
       </section>

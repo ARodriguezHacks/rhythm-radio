@@ -115,7 +115,7 @@ class Album extends Component {
   render() {
     return (
       <section className="album">
-        <section id="album-info">
+        <section>
           <img id="album-cover-art" src={this.state.album.albumCover} alt={this.state.album.title}/>
           <div className="album-details">
             <h1 id="album-title">{this.state.album.title}</h1>
@@ -123,7 +123,7 @@ class Album extends Component {
             <div id="release-info">{this.state.album.releaseInfo}</div>
           </div>
         </section>
-        <section id="music-info">
+        <section>
         <table id="song-list">
           <colgroup>
             <col id="song-number-column" />

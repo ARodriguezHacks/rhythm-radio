@@ -13,27 +13,35 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <nav className="nav">
-            <Link to='/' className="nav-style">Home</Link>
-            <Link to='/library' className="nav-style"> Library</Link>
-          </nav>
-          <h1 className="top-hero-title">Rhythm Radio</h1>
-        </header>
-        <main>
-          <Route exact path="/" component={Landing} />
-          <Route path="/library" component={Library} />
-          <Route path="/album/:slug" component={Album} />
-        </main>
+        <div className="main">
+          <header>
+            <nav className="nav">
+              <Link to='/' className="nav-style">Home</Link>
+              <Link to='/library' className="nav-style"> Library</Link>
+            </nav>
+            <h1 className="top-hero-title">Rhythm Radio</h1>
+          </header>
+          <main>
+            <Route exact path="/" component={Landing} />
+            <Route path="/library" component={Library} />
+            <Route path="/album/:slug" component={Album} />
+          </main>
+        </div>
         <div className="clear-footer footer">
           <Search />
           <footer>
             <h4>Rhythm Radio | Angie Rodriguez</h4>
             <div>
               <nav className="mobile-nav">
+                <div>
                 <Link to='/' className="mobile-home-nav">Home</Link>
+                </div>
+                <div>
                 <Link to='/library' className="mobile-lib-nav">Library</Link>
+                </div>
+                <div>
                 <Link to='/library' className="mobile-favs-nav">Favs</Link>
+                </div>
               </nav>
             </div>
           </footer>
