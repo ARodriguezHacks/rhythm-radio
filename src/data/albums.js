@@ -24,4 +24,43 @@ export default [{
       { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
       { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
     ]
+}, {
+  title: 'Restless Waves',
+  artist: 'Lilian Fern',
+  releaseInfo: 'Aerial Music',
+  albumCover: '/assets/images/album_covers/06-min.jpg',
+  slug: 'restless-waves',
+  songs: [
+    { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
+    { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
+    { title: 'Red', duration: '268.45', audioSrc: '/assets/music/red.mp3' },
+    { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
+    { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
+  ]
+}, {
+  title: 'Super Collider',
+  artist: 'Average Wayne',
+  releaseInfo: 'Station 12 Media',
+  albumCover: '/assets/images/album_covers/04-min.jpg',
+  slug: 'super-collider',
+  songs: [
+    { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
+    { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
+    { title: 'Red', duration: '268.45', audioSrc: '/assets/music/red.mp3' },
+    { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
+    { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
+  ]
+}, {
+  title: 'JellyFish',
+  artist: 'Marisol',
+  releaseInfo: 'FatFish Records',
+  albumCover: '/assets/images/album_covers/05-min.jpg',
+  slug: 'jellyfish',
+  songs: [
+    { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
+    { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
+    { title: 'Red', duration: '268.45', audioSrc: '/assets/music/red.mp3' },
+    { title: 'Pink', duration: '153.14', audioSrc: '/assets/music/pink.mp3' },
+    { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
+  ]
 }];
