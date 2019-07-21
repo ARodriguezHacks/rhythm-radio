@@ -51,11 +51,11 @@ export default [{
     { title: 'Magenta', duration: '374.22', audioSrc: '/assets/music/magenta.mp3' }
   ]
 }, {
-  title: 'JellyFish',
+  title: 'JellyFish Traffic',
   artist: 'Marisol',
   releaseInfo: 'FatFish Records',
   albumCover: '/assets/images/album_covers/05-min.jpg',
-  slug: 'jellyfish',
+  slug: 'jellyfish-traffic',
   songs: [
     { title: 'Blue', duration: '161.71', audioSrc: '/assets/music/blue.mp3' },
     { title: 'Green', duration: '103.96', audioSrc: '/assets/music/green.mp3' },
