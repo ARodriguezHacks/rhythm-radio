@@ -28,7 +28,6 @@ class App extends Component {
           </main>
         </div>
         <div className="clear-footer footer">
-          <Search />
           <footer>
             <h4>Rhythm Radio | Angie Rodriguez</h4>
             <div>
